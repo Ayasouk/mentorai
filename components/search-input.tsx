@@ -46,6 +46,5 @@ export const SearchInput = () => {
             placeholder="Search..."
             className="pl-10 bg-primary/10"
         />
-        <button onClick={()=>setValue("elontest")}>Test</button>
     </div>)
 }
