@@ -32,14 +32,19 @@
     "next": "latest",
     "next-cloudinary": "^4.24.0",
     "next-themes": "^0.2.1",
+    "openai": "^4.12.4",
+    "openai-edge": "^1.2.2",
     "query-string": "^8.1.0",
     "react": "latest",
     "react-dom": "latest",
     "react-hook-form": "^7.47.0",
     "react-spinners": "^0.13.8",
+    "replicate": "^0.18.1",
+    "stripe": "^14.1.0",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "zustand": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "latest",

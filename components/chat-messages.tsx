@@ -36,7 +36,7 @@ const ChatMessages = ({mentor, messages, isLoading}:ChatMessagesProps) => {
                     key={message.content}
                     role={message.role}
                     content={message.content}
-                    src={message.src}
+                    src={mentor.src}
                 />
             ))}
             { isLoading && (

@@ -46,7 +46,7 @@ export const ChatClient =  ({mentor}:ChatClientProps) => {
     }
 
     return (
-        <div className="flex flex-col h-full p-4 space-y-2">
+        <div className="flex flex-col overflow-y-auto h-full p-4 space-y-2">
             <ChatHeader mentor={mentor} />
             <div>
                 <ChatMessages mentor={mentor} isLoading={isLoading} messages={messages}/>
