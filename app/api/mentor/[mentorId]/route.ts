@@ -1,4 +1,5 @@
 import prismadb from "@/lib/prismadb";
+import { checkSubscription } from "@/lib/subscription";
 import { auth, currentUser } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
 
@@ -21,6 +22,11 @@ export async function PATCH(req: Request, {params}: {params: {mentorId: string}}
         }
 
         //TODO Check subscription
+        const isPro = await checkSubscription();
+
+        if(!isPro) {
+            return new NextResponse("Pro subscription required", {status: 403});
+        }
         
         const mentor = await prismadb.mentor.update({
             where: {
