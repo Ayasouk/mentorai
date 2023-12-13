@@ -44,7 +44,7 @@ export const ProModal = ()=> {
                         Upgrade to Pro
                     </DialogTitle>
                     <DialogDescription className="text-center space-y-2">
-                        Create <span className="text-sky-500 mx-1 font-medium">Custom AI</span> Companions!
+                        Create <span className="text-sky-500 mx-1 font-medium">Custom AI</span> Mentors !
                     </DialogDescription>
                 </DialogHeader>
                 <Separator/>
