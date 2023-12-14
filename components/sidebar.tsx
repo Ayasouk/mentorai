@@ -2,7 +2,7 @@
 
 import { useProModal } from "@/hooks/use-pro-modal";
 import { cn } from "@/lib/utils";
-import { Home, Plus, Settings, Video } from "lucide-react";
+import { Home, Plus, Settings } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
 
 interface SidebarProps {
@@ -33,12 +33,6 @@ export const Sidebar = ({isPro}:SidebarProps) => {
             label: "Settings",
             pro: false,
         },
-        {
-            icon: Video,
-            href: "/shorts",
-            label: "Shorts Maker",
-            pro: false,
-        }
 
     ];
 

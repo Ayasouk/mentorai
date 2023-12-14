@@ -2,7 +2,7 @@
 
 import { Mentor, Message } from "@prisma/client";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, Edit, MessagesSquare, MoreVertical, Search, Trash } from "lucide-react";
+import { ChevronLeft, Edit, MessagesSquare, MoreVertical, Trash } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { BotAvatar } from "./bot-avatar";
 import { auth, useUser } from "@clerk/nextjs";
@@ -18,7 +18,6 @@ interface ChatHeaderProps {
         };
     };
 }
-
 
 export const ChatHeader = ({mentor}: ChatHeaderProps) => {
     const router = useRouter();
